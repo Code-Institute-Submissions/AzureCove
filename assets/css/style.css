@@ -109,3 +109,12 @@ html {
   height: 150px;
   margin-bottom: 3em;
 }
+.card {
+  box-shadow: 0px 0px 5px 0px rgba(97, 97, 97, 0.75);
+  transition: 0.3s linear;
+  background: white;
+  padding: 1rem;
+}
+.card:hover {
+  box-shadow: 0px 0px 25px 0px rgba(97, 97, 97, 0.95);
+}
