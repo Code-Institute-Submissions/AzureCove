@@ -8,3 +8,12 @@ $(function () {
     }
   });
 });
+/*Typing script*/
+$(document).ready(function () {
+  var typed = new Typed(".typing", {
+    strings: ["housewives,", "students,", "junior developers,"],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true, // Default value
+  });
+});
