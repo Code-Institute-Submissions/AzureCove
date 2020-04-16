@@ -142,3 +142,41 @@ html {
   color: white;
   letter-spacing: 1rem;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    background-position: left;
+  }
+  .cards {
+    margin: 0.5em 0em;
+    padding: 0em;
+  }
+  .card {
+    margin: 1em 0em;
+  }
+  .jumbo {
+    padding: 2em 0em;
+  }
+  #navbar-toggler {
+    color: seashell;
+  }
+  .waveBottom {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
