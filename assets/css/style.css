@@ -103,7 +103,7 @@ html {
 
 .waveBottom {
   background-size: 50% 100px;
-  background-image: url(.../assets/images/wave-bot.png);
+  background-image: url("../images/wave-bot.png");
 }
 .wavy {
   height: 150px;
