@@ -17,3 +17,13 @@ $(document).ready(function () {
     loop: true, // Default value
   });
 });
+/*Wave script*/
+$(document).ready(function () {
+  loop();
+  function loop() {
+    $(".waveBottom").css("left", "0px");
+    $(".waveBottom").animate({ left: "-1900px" }, 16000, "linear", function () {
+      setTimeout(loop, 450);
+    });
+  }
+});
