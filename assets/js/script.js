@@ -25,3 +25,11 @@ $(document).ready(function () {
     });
   }
 });
+/*subscribe modal script*/
+document.getElementById("buttonmod").addEventListener("click", function () {
+  document.querySelector(".bg-modal").style.display = "flex";
+});
+
+document.querySelector(".close").addEventListener("click", function () {
+  document.querySelector(".bg-modal").style.display = "none";
+});
