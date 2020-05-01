@@ -53,7 +53,7 @@ In the future I would like update the information on the website on a regular ba
 ## Testing
 
 Aim of the test was to verify that the webiste works correctly across different operating systems,browsers and devices.
-Website was tested on Google Chrome,Firefox and Opera browsers in their latest versions.Website was tested on multiple mobile device (iPhone 5,6,XR Samsung Galaxy s5,Apple Ipad) to ensure compatibility and responsivness.Chrome developer tools were also used to check for compatibility and responsiveness.Collapsible navbar works correctly on mobile devices. Code was validated using W3C validation service.All links were tested manually and will open in new browser tab.
+Website was tested on Google Chrome,Firefox and Opera browsers in their latest versions.Website was tested on multiple mobile device (iPhone 5,6,XR Samsung Galaxy s5,Apple Ipad) to ensure compatibility and responsivness.Chrome developer tools were also used to check for compatibility and responsiveness.Collapsible navbar works correctly on mobile devices. Code was validated using W3C validation service.All links were tested manually and will open within same browser tab.
 
 ## Deployment
 
@@ -78,7 +78,7 @@ To run locally, you can clone this repository directly into the editor of your c
 
 ## Credits
 
-For the typing script I have used the library by Matt Boldt which can be found ![here](https://github.com/mattboldt/typed.js/).
+For the typing script I have used the library by Matt Boldt which can be found [here](https://github.com/mattboldt/typed.js/).
 
 ### Content
 
