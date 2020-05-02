@@ -6,7 +6,7 @@ The aim of the website is to provide information on cloud computing and how one 
 
 Live demo can be found [here](https://misza80.github.io/AzureCove/).
 
-![](https://github.com/misza80/AzureCove/blob/master/images/thumbnail1.png)
+![](https://github.com/misza80/AzureCove/blob/master/assets/images/thumbnail1.png)
 
 ## UX
 
