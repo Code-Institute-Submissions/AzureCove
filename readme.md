@@ -22,38 +22,45 @@ As a developer I expect to find information on how I can use Azure for my work.
 
 My goal in the design was to create a simple,easy to navigate website that will provide novice users with basic knowledge on cloud computing.
 
-### Scope
-
 ### Structure
 
 In the categories section I wanted to provide a list of main categories the information falls into,and in news section the latest informations on cloud computing,in the tutorials section links to video tutorials.
 
 ### Skeleton
 
-[Landing wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/main.jpg).\
+[Landing wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/main.jpg).
+[Categories wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/categories.jpg).
+[Tutorials wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/tutorials.jpg).
 
 ### Surface
 
-A plain white background with text and image animation.
+For the landing a image background with text and image animation.
+For the dynamic content a plain white background to prevent distractions from the content.
 
 ## Technologies
 
 1.HTML\
 2.CSS\
-3.Bootstrap (4.3.1)
-4.JavaScript
-5.jQuery
+3.Bootstrap (4.3.1)\
+4.JavaScript\
+5.jQuery\
+6.AJAX\
+7.Google Chrome Developer tools\
 
 ## Features
 
 This site uses collapsible navbar to manage the navigation list on smaller screens.
+Content is dynamically rewritten allowing for faster transitions between the subpages.
+In responses to users actions content is added to the page as necessary.
+User can select categories of tutorials by using a dropdown menu that will filter the content.
+In the future I would like to move the cards content to JSON file.
 
 In the future I would like update the information on the website on a regular basis with new articles and videos .I would also like to add a ability to comment on articles to allow for more user interaction.
 
 ## Testing
 
 Aim of the test was to verify that the webiste works correctly across different operating systems,browsers and devices.
-Website was tested on Google Chrome,Firefox and Opera browsers in their latest versions.Website was tested on multiple mobile device (iPhone 5,6,XR Samsung Galaxy s5,Apple Ipad) to ensure compatibility and responsivness.Chrome developer tools were also used to check for compatibility and responsiveness.Collapsible navbar works correctly on mobile devices. Code was validated using W3C validation service.All links were tested manually and will open within same browser tab.
+Website was tested on Google Chrome,Firefox and Opera browsers in their latest versions.Website was tested on multiple mobile device (iPhone 5,6,XR Samsung Galaxy s5,Apple Ipad) to ensure compatibility and responsivness.Chrome developer tools were also used to check for compatibility and responsiveness.Collapsible navbar works correctly on mobile devices. Code was validated using W3C and JsHint validation service.All links were tested manually and will open within same browser tab.I used a lot of console.log() to see if my code us running correctly.
 
 ## Deployment
 
