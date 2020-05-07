@@ -45,7 +45,7 @@ For the dynamic content a plain white background to prevent distractions from th
 4.JavaScript\
 5.jQuery\
 6.AJAX\
-7.Google Chrome Developer tools\
+7.Google Chrome Developer tools
 
 ## Features
 
