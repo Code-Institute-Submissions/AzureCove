@@ -80,7 +80,7 @@ function getContent(pieceId, callback) {
 // Updates the content based on the piece identifier.
 function navigate() {
   // Get a reference to the "contentcont" div.
-  var contentDiv = document.getElementById("contentcont"),
+  let contentDiv = document.getElementById("contentcont"),
     // Remove "#" character.
     pieceId = location.hash.substr(1);
 
