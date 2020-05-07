@@ -101,3 +101,160 @@ navigate();
 
 // Navigate whenever the piece identifier value changes.
 window.addEventListener("hashchange", navigate);
+//Array with Cards
+const cards = [
+  //Fundamentals
+  {
+    title: "Auzre basics",
+    description: "Azure Fundamentals",
+    category: "Fundamentals",
+    src: "https://www.youtube.com/embed/KXkBZCe699A",
+  },
+  {
+    title: "Auzre features compared ",
+    description: "Azure Fundamentals",
+    category: "Fundamentals",
+    src: "https://www.youtube.com/embed/xCabPpcq8Ac",
+  },
+
+  //Infrastructure
+  {
+    title: "Infrastructure as a Service",
+    description: "Azure Infrastructure",
+    category: "Infrastructure",
+    src: "https://www.youtube.com/embed/Zewl48XUr7w",
+  },
+
+  {
+    title: "Infrastructure as a Code",
+    description: "Azure Infrastructure",
+    category: "Infrastructure",
+    src: "https://www.youtube.com/embed/G3D14I5_NIk",
+  },
+  //AI & Data
+  {
+    title: "What is Azure AI",
+    description: "Azure AI & Data",
+    category: "ai",
+    src: "https://www.youtube.com/embed/RtRJry5-I0g",
+  },
+  //Internet of things
+  {
+    title: "Introduction to Azure IoT",
+    description: "Azure IoT",
+    category: "iot",
+    src: "https://www.youtube.com/embed/5ES-1g_mGxY",
+  },
+  //Security
+  {
+    title: "Auzre Security Basics",
+    description: "Azure Security",
+    category: "Security",
+    src: "https://www.youtube.com/embed/YskZ3WcK2jM",
+  },
+  {
+    title: "Auzre Security Essentials",
+    description: "Azure Security",
+    category: "Security",
+    src: "https://www.youtube.com/embed/OTGMi0ksjXY",
+  },
+  //DevOps
+  {
+    title: "Introduction to Azure DevOps",
+    description: "DevOps",
+    category: "devops",
+    src: "https://www.youtube.com/embed/JhqpF-5E10I",
+  },
+  //Web & Mobile
+  {
+    title: "Auzre Web Apps ",
+    description: "Azure Web",
+    category: "WebMobile",
+    src: "https://www.youtube.com/embed/jCfJWYocz1M",
+  },
+];
+function showCards() {
+  // Div containing cards with video Tutorials.
+  var cards_container = document.getElementById("cards");
+  // Remove all current card divs so we can replace with new ones below.
+  // If we don't do this the divs we add below will just be added after whatever
+  // is already on the page.
+  while (cards_container.firstChild) {
+    cards_container.removeChild(cards_container.firstChild);
+  }
+
+  var selected_category = document.getElementById("category-selector").value;
+
+  for (i = 0; i < cards.length; i++) {
+    var current_card = cards[i];
+
+    // The following two variables are boolean values
+    // category_correct is equal to true either if the selected option is all
+    // or the current Cards category value is the same as that selected.
+    var category_correct =
+      selected_category == "all" || current_card.category == selected_category;
+
+    // Only show Cards with the correct category
+    if (category_correct) {
+      var bootcolumn = generate_card_html(current_card);
+      cards_container.appendChild(bootcolumn);
+    }
+  }
+}
+/* Generate a div for a single card, e.g.
+  <div class="col-12 col-md-6 col-lg-3">
+      <div class="card">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            width="320"
+            height="220"
+            src="https://www.youtube.com/embed/KXkBZCe699A"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Title here</h5>
+          <p class="card-text">
+            Description here...
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  */
+function generate_card_html(card) {
+  var bootcolumn = document.createElement("div");
+  bootcolumn.setAttribute("class", "col-12 col-md-6 col-xl-3"); //
+  var card_div = document.createElement("div");
+  card_div.setAttribute("class", "card"); // Give div class="card"
+  var embed_div = document.createElement("div");
+  embed_div.setAttribute("class", "embed-responsive embed-responsive-16by9"); // add responsive embed.
+  var iframe = document.createElement("iframe"); // add iframe parameters
+  iframe.width = "320";
+  iframe.height = "220";
+  iframe.src = card.src;
+  iframe.frameborder = "0";
+  iframe.allow =
+    "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+  iframe.allowfullscreen;
+  var card_body = document.createElement("div");
+  card_body.setAttribute("class", "card-body");
+  var header = document.createElement("h5");
+  header.setAttribute("class", "card-title");
+  header.innerHTML = card.title;
+  var description = document.createElement("p");
+  description.setAttribute("class", "card-text");
+  description.innerHTML = card.description;
+
+  bootcolumn.appendChild(card_div);
+  card_div.appendChild(embed_div);
+  embed_div.appendChild(iframe);
+  card_div.appendChild(card_body);
+  card_body.appendChild(header);
+  card_body.appendChild(description);
+
+  return bootcolumn;
+}
+showCards();
