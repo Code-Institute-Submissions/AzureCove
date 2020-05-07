@@ -202,8 +202,12 @@ input {
   .jumbo {
     padding: 2em 0em;
   }
-  #navbar-toggler {
-    color: seashell;
+
+  .navbar {
+    background-color: #228be2;
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: white !important;
   }
   .waveBottom {
     display: none;
@@ -212,14 +216,23 @@ input {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .waveBottom {
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .waveBottom {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .waveBottom {
+    display: none;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
