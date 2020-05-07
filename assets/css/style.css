@@ -49,16 +49,6 @@ html {
   color: #fff;
 }
 
-@media (max-width: 991.98px) {
-  .navbar {
-    background: #fff;
-  }
-
-  .navbar .navbar-brand,
-  .navbar .nav-link {
-    color: #555;
-  }
-}
 /*main page*/
 .container-fluid {
   max-width: 100%;
