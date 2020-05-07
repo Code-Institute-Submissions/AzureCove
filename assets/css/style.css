@@ -158,6 +158,9 @@ input {
 .footer {
   margin: 0px -15px;
 }
+.nopadding {
+  padding: 0 !important;
+}
 .footicons {
   width: 100%;
   height: 200px;
