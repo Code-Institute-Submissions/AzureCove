@@ -53,9 +53,9 @@ This site uses collapsible navbar to manage the navigation list on smaller scree
 Content is dynamically rewritten allowing for faster transitions between the subpages.
 In responses to users actions content is added to the page as necessary.
 User can select categories of tutorials by using a dropdown menu that will filter the content.
-In the future I would like to move the cards content to JSON file.
 
-In the future I would like update the information on the website on a regular basis with new articles and videos .I would also like to add a ability to comment on articles to allow for more user interaction.
+In the future I would like to move the cards content to JSON file.Also add pages for each category in the categories section of the site.
+I would like update the information on the website on a regular basis with new articles and videos .I would also like to add a ability to comment on articles to allow for more user interaction.
 
 ## Testing
 
