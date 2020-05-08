@@ -62,6 +62,11 @@ In the future I would like update the information on the website on a regular ba
 Aim of the test was to verify that the webiste works correctly across different operating systems,browsers and devices.
 Website was tested on Google Chrome,Firefox and Opera browsers in their latest versions.Website was tested on multiple mobile device (iPhone 5,6,XR Samsung Galaxy s5,Apple Ipad) to ensure compatibility and responsivness.Chrome developer tools were also used to check for compatibility and responsiveness.Collapsible navbar works correctly on mobile devices. Code was validated using W3C and JsHint validation service.All links were tested manually and will open within same browser tab.I used a lot of console.log() to see if my code us running correctly.
 
+#### Errors
+
+Current Errors: 1.**NOT FIXED YET** On the tutorials page the cards will not load untill user will pick a category from the dropdown menu.The script for loading cards finishes before the navigation script.
+Currently working on a fix utilising promises,to allow for the navigation function to finish and then trigger cards function.
+
 ## Deployment
 
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch.
