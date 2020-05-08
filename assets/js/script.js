@@ -37,7 +37,7 @@ document.getElementById("buttonmod").addEventListener("click", function () {
 document.querySelector(".close").addEventListener("click", function () {
   document.querySelector(".bg-modal").style.display = "none";
 });
-
+//Navigation script based on tutorial on YouTube by Curran Kelleher "Navigation for Single Page Applications"
 //navigation for the single page app.
 // It loads html code from external html files.
 // External HTML pages after visited once are then stored.

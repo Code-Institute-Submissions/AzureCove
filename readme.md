@@ -28,8 +28,8 @@ In the categories section I wanted to provide a list of main categories the info
 
 ### Skeleton
 
-[Landing wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/main.jpg).
-[Categories wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/categories.jpg).
+[Landing wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/main.jpg).\
+[Categories wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/categories.jpg).\
 [Tutorials wireframe](https://github.com/misza80/AzureCove/blob/master/wireframes/tutorials.jpg).
 
 ### Surface
@@ -93,7 +93,8 @@ All content was written by me.
 
 ### Media
 
-All media were made by me.
+The top background image was made by me.
+Images in home and categories page were purchased from www.vecteezy.com
 
 ### Acknowledgements
 
