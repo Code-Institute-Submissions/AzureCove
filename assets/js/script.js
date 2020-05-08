@@ -9,6 +9,7 @@ $(window).on("scroll", function () {
 });
 
 //Typing script
+
 $(document).ready(function () {
   var typed = new Typed(".typing", {
     //Words that are being typed by the script.
@@ -18,7 +19,9 @@ $(document).ready(function () {
     loop: true, // Default value
   });
 });
+
 //Wave script
+
 $(document).ready(function () {
   loop();
   function loop() {
@@ -30,6 +33,7 @@ $(document).ready(function () {
 });
 
 //subscribe modal
+
 document.getElementById("buttonmod").addEventListener("click", function () {
   document.querySelector(".bg-modal").style.display = "flex";
 });
@@ -37,6 +41,7 @@ document.getElementById("buttonmod").addEventListener("click", function () {
 document.querySelector(".close").addEventListener("click", function () {
   document.querySelector(".bg-modal").style.display = "none";
 });
+
 //Navigation script based on tutorial on YouTube by Curran Kelleher "Navigation for Single Page Applications"
 //navigation for the single page app.
 // It loads html code from external html files.
@@ -101,6 +106,7 @@ navigate();
 
 // Navigate whenever the piece identifier value changes.
 window.addEventListener("hashchange", navigate);
+
 //Array with Cards
 const cards = [
   //Fundamentals
@@ -173,6 +179,7 @@ const cards = [
     src: "https://www.youtube.com/embed/jCfJWYocz1M",
   },
 ];
+
 function showCards() {
   // Div containing cards with video Tutorials.
   var cards_container = document.getElementById("cards");
@@ -221,8 +228,7 @@ function showCards() {
           </p>
         </div>
       </div>
-    </div>
-    
+    </div>   
   */
 function generate_card_html(card) {
   var bootcolumn = document.createElement("div");
